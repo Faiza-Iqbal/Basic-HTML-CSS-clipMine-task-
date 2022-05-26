@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+}
+:root {
+    --blue: #2c71b8;
+    --lightBlue: #75cded;
+    --lightGray: #f8f8f8;
+    --regularGray: #77787a;
+    --activeGray: #e6e6e6;
+    --borderGray: #e3e3e3;
+    --darkGray: #393939;
+    --charcoal: #272727;
+    --white: #ffffff; 
+  }
+body{
+    box-sizing: border-box;
+}
+.pd-50{
+    padding: 50px 0px;
+}
+.container{
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+header {
+    background-color: var(--lightGray);
+    padding: 0 5px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ .list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.header li {
+    padding: 0px 12px;
+    
+    position: relative;
+    
+    cursor: pointer;
+}
+.header li a{
+    text-decoration: none;
+    color: var(--regularGray);
+    font-size: 14px;
+}
+ .header select{
+    appearance: none;
+    -moz-appearance: none;
+    border: none;
+    background-color: transparent;
+    color: gray;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    position: relative;
+    min-width: 60px;
+}
+.header select:focus-visible{
+    outline: none;
+}
+i.fa-caret-down{
+    pointer-events: none;
+    position: absolute;
+    right: 10px;
+    top: 1px;
+}
+li.active{
+    background-color: var(--activeGray);
+    padding: 20px 11px;
+}
+.logo{
+    width: 135px;
+}
+.banner{
+    position: relative;
+}
+.banner img{
+    width: 100%;
+}
+.banner .bannerWrapper{
+    position: absolute;
+    top: 36%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.banner .bannerContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    text-align: center;
+    max-width: 440px;
+    align-content: center;
+}
+.banner button{
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+    border-radius: 2px;
+    min-width: 200px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.banner .bannerContent h1{
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 400;
+}
+.banner .bannerContent p{
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 21px;
+}
+.sectionTagLine{
+    text-align: center;
+}
+.sectionTagLine p{
+    font-size: 18px;
+}
+section.helpViewers {
+    padding: 50px 0px;
+}
+.cardsWrapper {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+}
+.features .cardsWrapper{
+    grid-column-gap: 4rem;
+}
+.card img{
+    width: 100%;
+}
+figcaption {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 28px;
+    color: darkslategrey;
+}
+.card span {
+    font-size: 13px;
+    color: darkslategrey;
+}
+.card i.fa-solid{
+    font-size: 12px;
+}
+i.fa-magnet{
+    margin-right: 5px;
+}
+.userActions {
+    margin: 8px 0px;
+}
+.userActions button{
+    background-color: transparent;
+    border: 1px solid var(--lightBlue);
+    border-radius: 20px;
+    padding: 5px 7px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--lightBlue);
+    cursor: pointer;
+}
+.paragraph {
+    text-align: center;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+h2.sectionTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    font-weight: 400;
+}
+.featuresDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0px;
+}
+.features figure {
+    padding: 12px 30px;
+    border: 1px solid var(--borderGray);
+    border-radius: 5px;
+}
+h3 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 35px;
+}
+.featuresDescription .paragraph{
+    font-size: 14px;
+}
+.benefitWrapper {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+.benefitContent{
+    max-width: 400px;
+    width: 100%;
+}
+.benefitUnit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.benefitContent p{
+    font-size: 14px;
+}
+.iconWrapper{
+    width: 166px; height: 166px;
+    transform: scale(0.5);
+}
+.icon1 {
+    background: url('../assets/benefits/benefits_sprite.png') -10px -10px;
+}
+.icon2{
+    background: url('../assets/benefits/benefits_sprite.png') -10px -196px;
+}
+.icon3{
+    background: url('../assets/benefits/benefits_sprite.png') -10px -382px;
+}
+.videoCollection .paragraph{
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+}
+.videosWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0px;
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
+}   
+.video{
+    position: relative;
+}
+p.videoTitle {
+    position: absolute;
+    top: 73px;
+    left: 166px;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.partnerWrapper {
+    background-color: var(--lightGray);
+}
+.partners {
+    display: grid;
+    grid-template-columns: 215px 215px 215px;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+.inputGroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 30px;
+}
+.inputGroup input{
+    max-width: 500px;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid var(--borderGray);
+}
+.inputGroup input:focus-visible{
+    outline:1px solid var(--borderGray);
+}
+.inputGroup span{
+    background-color: var(--blue);
+    color: var(--white);
+    min-height: 34px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    padding: 0px 8px;
+    border-radius: 0px 5px 5px 0px;
+    text-transform: uppercase;
+}
+.platforms .partners{
+    grid-template-columns: 115px 115px 115px 115px;
+}
+.menus {
+    background-color: var(--darkGray);
+    padding: 3px 0px;
+    
+}
+.menus li a{
+    padding: 0px 12px;
+    text-decoration: none;
+    color: steelblue;
+    font-size: 14px;
+}
+.copyright {
+    background-color: var(--charcoal);
+    color: #8d9491;
+    padding: 3px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}

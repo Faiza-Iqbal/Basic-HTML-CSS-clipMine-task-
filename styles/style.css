@@ -87,14 +87,14 @@ li.active{
 .banner img{
     width: 100%;
 }
-.banner .bannerWrapper{
+.banner .banner-wrapper{
     position: absolute;
     top: 36%;
     display: flex;
     justify-content: center;
     width: 100%;
 }
-.banner .bannerContent{
+.banner .banner-content{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -116,32 +116,32 @@ li.active{
     letter-spacing: 1px;
     cursor: pointer;
 }
-.banner .bannerContent h1{
+.banner .banner-content h1{
     margin-bottom: 30px;
     font-size: 24px;
     font-weight: 400;
 }
-.banner .bannerContent p{
+.banner .banner-content p{
     margin-bottom: 30px;
     font-size: 16px;
     line-height: 21px;
 }
-.sectionTagLine{
+.section-tag-line{
     text-align: center;
 }
-.sectionTagLine p{
+.section-tag-line p{
     font-size: 18px;
 }
-section.helpViewers {
+section.help-viewers {
     padding: 50px 0px;
 }
-.cardsWrapper {
+.cards-wrapper {
     margin-top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 2rem;
 }
-.features .cardsWrapper{
+.features .cards-wrapper{
     grid-column-gap: 4rem;
 }
 .card img{
@@ -163,10 +163,10 @@ figcaption {
 i.fa-magnet{
     margin-right: 5px;
 }
-.userActions {
+.user-actions {
     margin: 8px 0px;
 }
-.userActions button{
+.user-actions button{
     background-color: transparent;
     border: 1px solid var(--lightBlue);
     border-radius: 20px;
@@ -182,14 +182,14 @@ i.fa-magnet{
     line-height: 22px;
 }
 
-h2.sectionTitle {
+h2.section-title {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 26px;
     font-weight: 400;
 }
-.featuresDescription {
+.features-description {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -206,27 +206,29 @@ h3 {
     font-weight: 400;
     line-height: 35px;
 }
-.featuresDescription .paragraph{
+.features-description .paragraph{
     font-size: 14px;
 }
-.benefitWrapper {
+.benefit-wrapper {
     max-width: 600px;
     width: 100%;
     margin: 0 auto;
 }
-.benefitContent{
+.benefit-content{
     max-width: 400px;
     width: 100%;
 }
-.benefitUnit {
+.benefit-unit
+{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.benefitContent p{
+.benefit-content p{
     font-size: 14px;
 }
-.iconWrapper{
+.icon-wrapper
+{
     width: 166px; height: 166px;
     transform: scale(0.5);
 }
@@ -239,12 +241,12 @@ h3 {
 .icon3{
     background: url('../assets/benefits/benefits_sprite.png') -10px -382px;
 }
-.videoCollection .paragraph{
+.video-collection .paragraph{
     max-width: 700px;
     width: 100%;
     margin: 0 auto;
 }
-.videosWrapper {
+.videos-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -256,7 +258,7 @@ h3 {
 .video{
     position: relative;
 }
-p.videoTitle {
+p.video-title {
     position: absolute;
     top: 73px;
     left: 166px;
@@ -264,7 +266,7 @@ p.videoTitle {
     color: #fff;
     letter-spacing: 1px;
 }
-.partnerWrapper {
+.partner-wrapper {
     background-color: var(--lightGray);
 }
 .partners {
@@ -276,24 +278,24 @@ p.videoTitle {
     align-items: center;
     padding-top: 30px;
 }
-.inputGroup {
+.input-group {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     margin-top: 30px;
 }
-.inputGroup input{
+.input-group input{
     max-width: 500px;
     width: 100%;
     padding: 8px;
     border-radius: 5px 0px 0px 5px;
     border: 1px solid var(--borderGray);
 }
-.inputGroup input:focus-visible{
+.input-group input:focus-visible{
     outline:1px solid var(--borderGray);
 }
-.inputGroup span{
+.input-group span{
     background-color: var(--blue);
     color: var(--white);
     min-height: 34px;
